@@ -135,8 +135,12 @@ class RestoCafe extends Component {
   )
 
   renderMenuList = () => {
-    const {restaurantData, activeCategoryId, cartCount, itemQuantities} =
-      this.state
+    const {
+      restaurantData,
+      activeCategoryId,
+      cartCount,
+      itemQuantities,
+    } = this.state
 
     const menuList = restaurantData.tableMenuList
     const activeCategoryObject = menuList.find(
